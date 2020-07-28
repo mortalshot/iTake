@@ -51,5 +51,39 @@ $(document).ready(function () {
 
   $('.menu__burger').click(function (e) {
     $('.menu__burger, .menu__body').toggleClass('active');
+  }); // slider
+
+  $('.how-use__slider').slick({
+    dots: true,
+    pauseOnDotsHover: true,
+    slidesToShow: 1,
+    infinite: false,
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 650,
+      settings: {
+        arrows: false
+      }
+    }]
+  }); // up
+
+  var btn = $('.up-btn');
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, '1000');
+  }); // Go To
+
+  $(".menu").on("click", ".menu__link", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href');
+    var top = $(id).offset().top;
+    $('.menu__burger').removeClass('active');
+    $('.menu__body').removeClass('active'); // $('body').removeClass('lock');
+
+    $('body,html').animate({
+      scrollTop: top
+    }, 1000);
   });
 });
