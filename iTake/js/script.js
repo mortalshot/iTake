@@ -33,6 +33,7 @@ $(document).ready(function () {
 	// burger
 	$('.menu__burger').click(function (e) {
 		$('.menu__burger, .menu__body').toggleClass('active');
+		$('body').toggleClass('lock');
 	});
 
 	// slider

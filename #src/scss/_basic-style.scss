@@ -12,6 +12,11 @@ body {
     font-size: 17px;
     line-height: 21px;
     color: #000;
+    @media screen and (max-width: 700px) {
+        &.lock {
+            overflow: hidden;
+        }
+    }
 }
 .container {
     max-width: 1060px;
@@ -29,4 +34,32 @@ a {
     font-size: 30px;
     line-height: 33px;
     color: #1e6bc6;
+}
+
+.write-us {
+    padding: 7px 19px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    transition: 0.3s ease all 0s;
+
+    @media screen and (min-width: 991px) {
+        &:hover {
+            color: #1e6bc6;
+            svg {
+                path {
+                    fill: #1e6bc6;
+                    transition: 0.3s ease all 0s;
+                }
+            }
+        }
+    }
+    svg {
+        margin-right: 10px;
+    }
 }
