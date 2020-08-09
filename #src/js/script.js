@@ -1,4 +1,7 @@
 $(document).ready(function () {
+	@@include('slick.js')
+
+
 	function testWebP(callback) {
 		var webP = new Image();
 		webP.onload = webP.onerror = function () {
@@ -67,7 +70,7 @@ $(document).ready(function () {
 		var top = $(id).offset().top;
 		$('.menu__burger').removeClass('active');
 		$('.menu__body').removeClass('active');
-		// $('body').removeClass('lock');
+		$('body').removeClass('lock');
 		$('body,html').animate({ scrollTop: top }, 1000);
 	});
 });

@@ -21,7 +21,9 @@
                 border: none;
                 justify-content: flex-start;
                 .flag-icon {
-                    width: 38px;
+                    img {
+                        width: 38px;
+                    }
                 }
                 .arrow {
                     display: none;
@@ -306,4 +308,48 @@
 }
 .flag-icon {
     padding-right: 5px;
+    
+    &__name {
+        padding-left: 5px;
+    }
+}
+
+.first-screen--privacy {
+    .container {
+        padding: 0 40px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 33px 0;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 48px;
+        padding: 78px 0 35px;
+        @media screen and (max-width: 575px) {
+            padding-top: 0;
+        }
+    }
+}
+.privacy-content {
+    padding: 77px 0;
+    @media screen and (max-width: 575px) {
+        padding: 60px 0;
+    }
+
+    &__text {
+        font-size: 17px;
+        line-height: 21px;
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
 }

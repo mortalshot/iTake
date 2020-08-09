@@ -296,6 +296,51 @@ a {
   padding-right: 5px;
 }
 
+.flag-icon__name {
+  padding-left: 5px;
+}
+
+.first-screen--privacy .container {
+  padding: 0 40px;
+}
+
+.first-screen--privacy .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 33px 0;
+}
+
+.first-screen--privacy .title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 48px;
+  padding: 78px 0 35px;
+}
+
+.privacy-content {
+  padding: 77px 0;
+}
+
+.privacy-content__text {
+  font-size: 17px;
+  line-height: 21px;
+  padding-bottom: 20px;
+}
+
+.privacy-content__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 .slick-slider {
   position: relative;
   display: block;
@@ -584,10 +629,10 @@ a {
 }
 
 .calendar__img {
-  -webkit-transform: translate(0, -70px);
-      -ms-transform: translate(0, -70px);
-          transform: translate(0, -70px);
-  margin: 0px 0 -70px 0;
+  -webkit-transform: translate(0, -80px);
+      -ms-transform: translate(0, -80px);
+          transform: translate(0, -80px);
+  margin: 0px 0 -80px 0;
 }
 
 .calendar__img img {
@@ -755,7 +800,7 @@ a {
 
 .slick-dots {
   position: absolute;
-  bottom: 0;
+  bottom: 28%;
   -webkit-transform: translate(0, -100%);
       -ms-transform: translate(0, -100%);
           transform: translate(0, -100%);
@@ -906,8 +951,17 @@ a {
   padding: 9px 0;
 }
 
+.rating-star {
+  margin: 0 -2px;
+}
+
+.rating-star__star {
+  padding: 0 2px;
+}
+
 .rating {
   margin: 0 -2px;
+  display: none !important;
 }
 
 .rating__star {
@@ -1161,10 +1215,6 @@ a {
   height: 15px;
 }
 
-.footer__privacy {
-  margin-bottom: 10px;
-}
-
 .privacy__link {
   color: #000;
   margin-left: 12px;
@@ -1252,7 +1302,7 @@ a {
 
 @media screen and (max-width: 890px) {
   .how-use {
-    padding: 20px 0;
+    padding: 20px 0 91px;
   }
 
   .slider__wrapper {
@@ -1263,9 +1313,9 @@ a {
   }
 
   .slider__text {
-    max-width: inherit;
-    padding: 50px 20px;
+    max-width: 312px;
     text-align: center;
+    padding: 50px 0;
   }
 
   .slick-prev {
@@ -1286,6 +1336,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    bottom: -19px;
   }
 }
 
@@ -1320,7 +1371,7 @@ a {
   }
 
   .offer__img {
-    margin: 0;
+    margin: -80px 0 50px;
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2);
@@ -1341,6 +1392,7 @@ a {
   .slider__img img {
     display: block;
     width: 100%;
+    max-width: 332px;
     height: auto;
   }
 
@@ -1396,7 +1448,7 @@ a {
             justify-content: flex-start;
   }
 
-  .header__languages .languages__language .flag-icon {
+  .header__languages .languages__language .flag-icon img {
     width: 38px;
   }
 
@@ -1603,7 +1655,7 @@ a {
   }
 
   .calendar {
-    padding-bottom: 20px;
+    padding-bottom: 28px;
   }
 
   .calendar__row {
@@ -1672,6 +1724,7 @@ a {
 
   .footer__download {
     margin: 0;
+    margin-bottom: 13px;
   }
 
   .footer__rating .rating__stars {
@@ -1682,8 +1735,16 @@ a {
 }
 
 @media screen and (max-width: 575px) {
+  .first-screen--privacy .title {
+    padding-top: 0;
+  }
+
+  .privacy-content {
+    padding: 60px 0;
+  }
+
   .first-screen__header {
-    padding: 27px 0 0;
+    padding: 19px 0 0;
   }
 
   .offer {
@@ -1712,9 +1773,17 @@ a {
     padding-bottom: 23px;
   }
 
+  .offer__img {
+    margin: 0 0 -15px;
+  }
+
   .download {
     width: 121px;
     height: 37px;
+  }
+
+  .personal {
+    padding-bottom: 38px;
   }
 
   .personal__column--left {
@@ -1744,6 +1813,13 @@ a {
   .calendar__title {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .calendar__img {
+    -webkit-transform: translate(0px, -42px);
+        -ms-transform: translate(0px, -42px);
+            transform: translate(0px, -42px);
+    margin: 0 0 -42px 0;
   }
 
   .features__cards {
@@ -1776,6 +1852,10 @@ a {
     line-height: 15px;
   }
 
+  .how-use {
+    padding-bottom: 76px;
+  }
+
   .how-use__title {
     font-size: 25px;
     line-height: 28px;
@@ -1789,7 +1869,7 @@ a {
   .slider__text {
     font-size: 18px;
     line-height: 22px;
-    padding: 30px 20px;
+    padding: 30px 20px 38px;
   }
 
   .slider__img {
@@ -1798,6 +1878,7 @@ a {
 
   .slick-dots {
     margin: 0 -15px;
+    bottom: -16px;
   }
 
   .slick-dots li {
@@ -1882,6 +1963,18 @@ a {
     padding: 4px 0;
   }
 
+  .rating-star {
+    margin: 0 -1.5px;
+  }
+
+  .rating-star__star {
+    padding: 0 1.5px;
+  }
+
+  .rating-star__star img {
+    max-width: 13.52px;
+  }
+
   .rating {
     margin: 0 -1.5px;
   }
@@ -1931,6 +2024,21 @@ a {
     max-width: inherit;
     width: 19px;
     height: 19px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .offer__img {
+    -webkit-transform: scale(1.37) translate(10px, -15px);
+        -ms-transform: scale(1.37) translate(10px, -15px);
+            transform: scale(1.37) translate(10px, -15px);
+  }
+
+  .personal__img {
+    -webkit-transform: scale(1.12) translate(0, -40px);
+        -ms-transform: scale(1.12) translate(0, -40px);
+            transform: scale(1.12) translate(0, -40px);
+    margin: 0 0 -30px;
   }
 }
 
